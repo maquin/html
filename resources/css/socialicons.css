@@ -1,0 +1,47 @@
+/***************************Social Icons modelo 1***********************/
+.social-icon{
+    font-size: inherit;
+    list-style: none;
+    
+}
+.social-icon>li{
+    width: 20px;
+    padding: 5px 0px 5px;
+    margin: 0px 5px 0px;
+    text-align: center;
+    /*box-shadow: 2px 2px 5px #999;*/
+    box-shadow: 0px 0px 0px #999;
+    border-radius: 4px;
+}
+/*
+.social-icon .ico-f{
+  background-color: #CCC;
+}
+*/
+li a {
+    display: inline; 
+    color: #000;
+    -webkit-transition: all 0.1s ease;
+       -moz-transition: all 0.1s ease;
+         -o-transition: all 0.1s ease;
+        -ms-transition: all 0.1s ease;
+            transition: all 0.1s ease;
+  }
+  li.ico-f a:hover {
+    color: #3B5998;
+  }
+  li.ico-t a:hover {
+    color: #0084B4;
+  }
+  li.ico-g a:hover {
+    color: #d34836;
+  }
+  li.ico-l a:hover {
+    color: #0E76A8;
+  }
+  li.ico-y a:hover {
+    color: #C4302B;
+  }
+  
+  
+  
