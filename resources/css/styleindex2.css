@@ -2,11 +2,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 25px;
 }
-
-header{
-    background-color: brown;
-}
-
 a{
     text-decoration: none;
 }
@@ -37,6 +32,95 @@ a{
     font-size: 25px;
     text-align: center;
     padding: 10px 0px 30px 0px;
+}
+/****************************************************************/
+header{
+    background-image: url("../images/banner3.jpg");
+    background-color: rgba(27, 27, 133, 0.3);
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.topnav{
+    height: 22px;
+    padding: 10px;
+    display: block;
+}
+.logo{
+    font-size: 25px;
+    float: left;
+    padding-top: 5px;
+    margin-left: 20px;
+    margin-right: 50px;
+    /*opacity: 1;*/
+}
+.topnav nav{
+    padding-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    float: left;
+}
+.topnav nav ul li{
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.topnav nav ul li a{
+    text-decoration: none;
+}
+.topnav nav ul li a:hover{
+    text-decoration-line: underline;
+}
+
+.email{
+    float: right;
+    padding-top: 15px;
+    margin-right: 20px;
+}
+
+.toplanding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*height: 585px;*/
+    width: 100%;
+}
+.toplanding .frase1{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 10px;
+}
+.toplanding .frase2{
+    font-size: 25px;
+    padding: 10px;
+    font-family: Arial;
+}
+.buscador{
+    background-color: aqua;
+    position: relative;
+    width: 300px;
+    margin-top: 15px;
+}
+.casillabuscar{
+    padding: 5px 5px 5px 10px;
+    width: 200px;
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+    border: 0px;
+    border-radius: 15px;
+}
+.botonbuscar{
+    width: 100px;
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    background-color: green;
+    border-radius: 15px;
+    position: absolute;
+    right: 40px;
 }
 /***********************************************/
 .seccion h1{
@@ -127,7 +211,9 @@ article{
     border-radius: 50%;
 }
 .wps-image{
-    /*padding: 0px;*/
+    padding: 0px;
+}
+.wps-image img{
     width: 100%;
 }
 .what-people-say h1{
@@ -305,6 +391,14 @@ footer{
         display: inline-block;
         font-weight: bold;
     }        
+    .toplanding{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100%;
+    }    
 }
 
 @media screen and (min-width: 601px) and (max-width: 800px){
@@ -317,6 +411,14 @@ footer{
         display: inline-block;
         font-weight: bold;
     }        
+    .toplanding{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100%;
+    }    
 }
 
 @media screen and (min-width:801px) and (max-width: 970px){
@@ -329,9 +431,17 @@ footer{
         display: inline-block;
         font-weight: bold;
     }        
+    .toplanding{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100%;
+    }    
 }
 
-@media screen and (min-width:0px) and (max-width: 970px){
+@media screen and (min-width:971px) and (max-width: 970px){
     .formulario{
         padding-left: 40px;
         padding-right: 40px;
@@ -341,4 +451,31 @@ footer{
         display: inline-block;
         font-weight: bold;
     }        
+    .toplanding{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 585px;
+        width: 100%;
+    }    
+}
+@media screen and (min-width:0px) and (max-width: 1024px){
+    .formulario{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .box-price{
+        width: 60px;
+        display: inline-block;
+        font-weight: bold;
+    }        
+    .toplanding{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 605px;
+        width: 100%;
+    }    
 }
