@@ -1,0 +1,344 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+}
+
+header{
+    background-color: brown;
+}
+
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0px auto;
+    border-color: darkgray;
+}
+.color-blanco{
+    color: #FFFFFF;
+}
+.centrado{
+    text-align: center;
+}
+
+.seccion{
+    box-sizing: content-box;
+    color: #453d36;
+    padding: 35px;
+}
+.seccion-impar{
+    background-color: #FFFFFF;
+}
+
+.seccion-par{
+    background-color: #F4F4F4;
+}
+.h1{
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0px 30px 0px;
+}
+/***********************************************/
+.seccion h1{
+    font-size: 22px;
+    padding-top: 20px;
+}
+.article p{
+    font-size: 12px;
+}
+.article h2{
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+article{
+    display: none;
+}
+.itabs>input {
+    display: none;
+  }
+.wyg-image{
+    width: 80%;
+}
+.itabs>label {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 10px 15px 0px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: #abc;
+    border: 1px solid transparent;
+  }
+  
+.itabs>label:before {
+    font-weight: normal;
+    margin-right: 10px;
+  }
+.itabs>label:hover {
+    color: #789;
+    cursor: pointer;
+  }
+  
+.itabs>input:checked + label {
+    color: #000;
+    border-bottom: 2px solid #00aaff;
+  }
+  
+  #tab1:checked ~ #ctab1,
+  #tab2:checked ~ #ctab2,
+  #tab3:checked ~ #ctab3{
+    display: block;
+  }
+/********************************************/
+.professional-list{
+    /*box-sizing: content-box;*/
+    padding: 0px;
+}
+.profesional{
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.profesional-info{
+    width: 100%;
+}
+.profesional-info img{
+    width: 100%;
+}
+.profesional h2{
+    font-size: 18px;
+}
+.profesional h3{
+    padding-top: 8px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.profesional p{
+    padding-top: 10px;
+    font-size: 12px;
+}
+/**********************************************/
+.what-people-say{
+    background-color: black;
+    padding: 35px;
+}
+.wps-img-user{
+    width: 35px;
+    border-radius: 50%;
+}
+.wps-image{
+    /*padding: 0px;*/
+    width: 100%;
+}
+.what-people-say h1{
+    padding-bottom: 10px;
+    font-size: 30px;
+    color: #CCC;
+}
+.slider p{
+    padding-bottom: 10px;
+    width: 100%;
+    font-style: italic;
+    font-size: 12px;
+    color: #ccc;
+}
+.wps-user-name{
+    color: #ccc;
+}
+.slider .mensaje{
+    display: none;
+}
+.slider-tab{
+	margin: auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+#msg1:checked ~ #slider1,
+#msg2:checked ~ #slider2,
+#msg3:checked ~ #slider3{
+  display: block;
+}
+/************************************************/
+.box-planes{
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.box-planes-h1{
+    width: 100%;
+    font-size: 25px;
+    text-align: center;
+    padding: 10px 0px 30px 0px;
+}
+
+.box-plan{
+    background-color: #FFFFFF;
+    margin-right: 2px;
+    padding: 30px;
+}
+.h2{
+    font-size: 18px;
+    padding: 10px 0px 10px 0px;
+    border-bottom: solid 1px #ccc;
+}
+.box-plan ul{
+    border-bottom: solid 1px #ccc;
+    padding: 15px 0px 15px 0px;
+}
+.box-plan li{
+    font-size: 12px;
+}
+.box-price-register{
+    font-size: 12px;
+    padding-top: 10px;
+
+}
+.box-price{
+    width: 134px;
+    display: inline-block;
+    font-weight: bold;
+}
+.box-plan .botonregistrar{
+    display: inline-block;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #FFFFFF;
+    background-color: green;
+    border-radius: 15px;
+    position: absolute;
+}
+.box-plan .botonregistrar a{
+    display: block;
+    color:inherit;
+}
+/********************formulario***********************/
+.formulario{
+    text-align: center;
+    font-size: 12px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.borde-imput{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+.caja-texto{
+    height: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.caja-textarea{
+    width: 100%;
+}
+.botonsendmessage{
+    border: none;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    padding: 2px;
+    color: #FFFFFF;
+    background-color: #000;
+    border-radius: 15px;
+}
+
+/*
+.formulario{
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: #00aaff;
+}
+.borde-imput{
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+.caja-texto{
+    height: 30px;;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.caja-textarea{
+    width: 100%;
+}
+.formulario .botonsendmessage{
+    border: none;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    padding: 2px;
+    color: #FFFFFF;
+    background-color: #000;
+    border-radius: 15px;
+}
+*/
+/********************Footer**********************/
+footer{
+    padding: 35px;
+    float: left;
+    font-size: 12px;
+    width: 100%;
+}
+.box-copyright{
+    text-align: center;
+    font-size: 12px;
+}
+.box-social{
+    text-align: center;
+}
+
+
+
+/**************************************************/
+
+@media screen and (min-width: 0px) and (max-width: 600px){
+    .formulario{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .box-price{
+        width: 140px;
+        display: inline-block;
+        font-weight: bold;
+    }        
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px){
+    .formulario{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .box-price{
+        width: 140px;
+        display: inline-block;
+        font-weight: bold;
+    }        
+}
+
+@media screen and (min-width:801px) and (max-width: 970px){
+    .formulario{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .box-price{
+        width: 60px;
+        display: inline-block;
+        font-weight: bold;
+    }        
+}
+
+@media screen and (min-width:0px) and (max-width: 970px){
+    .formulario{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .box-price{
+        width: 60px;
+        display: inline-block;
+        font-weight: bold;
+    }        
+}
