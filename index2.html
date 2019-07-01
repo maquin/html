@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Soft Landing</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
@@ -21,7 +21,7 @@
         <header>
             <div class="topnav">
                 <div class="logo color-blanco">Soft Landing</div>
-                <nav>
+                <nav class="nav-site">
                     <ul>
                         <li><a class="color-blanco" href="#">Home</a></li>
                         <li><a class="color-blanco" href="#">Features</a></li>
@@ -141,8 +141,14 @@
             </div>
             <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 what-people-say">
                 <h1>What people say</h1>
-                <div class="slider">
-                    <div class="mensaje1" id="slider1">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner carousel-text">
+                      <div class="carousel-item active carousel-box">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae voluptatum
                             quia
                             consectetur animi fugit, iste, incidunt, facere repudiandae similique quasi. Esse,
@@ -156,8 +162,8 @@
                             <img class="wps-img-user" src="resources/images/img2.png" alt="">
                             <span class="wps-user-name">Sofia</span>
                         </div>
-                    </div>
-                    <div class="mensaje" id="slider2">
+                      </div>
+                      <div class="carousel-item carousel-box">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae voluptatum
                             quia
                             consectetur animi fugit, iste, incidunt, facere repudiandae similique quasi. Esse,
@@ -171,8 +177,8 @@
                             <img class="wps-img-user" src="resources/images/img3.png" alt="">
                             <span class="wps-user-name">Sofia</span>
                         </div>
-                    </div>
-                    <div class="mensaje" id="slider3">
+                      </div>
+                      <div class="carousel-item carousel-box">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae voluptatum
                             quia
                             consectetur animi fugit, iste, incidunt, facere repudiandae similique quasi. Esse,
@@ -186,13 +192,9 @@
                             <img class="wps-img-user" src="resources/images/andrew_orange.png" alt="">
                             <span class="wps-user-name">Sofia</span>
                         </div>
+                      </div>
                     </div>
-                </div>
-                <div class="slider-tab">
-                    <input id="msg1" type="radio" name="slidertab" checked>
-                    <input id="msg2" type="radio" name="slidertab">
-                    <input id="msg3" type="radio" name="slidertab">
-                </div>
+                  </div>
             </div>
         </div>
         <div class="row  seccion seccion-par">
@@ -211,6 +213,16 @@
                                 <li>6 TB Bandwith</li>
                                 <li>24-hour Support</li>
                             </ul>
+                            <!--
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="box-price">$200/mo</div>    
+                                </div>
+                                <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="botonregistrar"><a href="#">Register Now</a></div>
+                                </div>
+                            </div>
+                            -->
                             <div class="box-price-register">
                                 <div class="box-price">$200/mo</div>
                                 <div class="botonregistrar"><a href="#">Register Now</a></div>
@@ -274,15 +286,6 @@
                             placeholder="Your Message" rows="5"></textarea>
                     </div>
                 </div>
-                <!--
-                <div class="formulario">
-                    <input class="caja-texto borde-imput" type="text" placeholder="Full Name">
-                    <input class="caja-texto borde-imput" type="text" placeholder="Email Address">
-                    <input class="botonsendmessage" type="submit" value="Send Message">
-                    <textarea class="caja-textarea borde-imput" name="message" id="message" placeholder="Your Message"
-                        rows="5"></textarea>
-                </div>
-            -->
             </div>
 
         </div>
