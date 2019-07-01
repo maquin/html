@@ -70,6 +70,7 @@ header{
 }
 .topnav nav ul li a:hover{
     text-decoration-line: underline;
+    color: green;
 }
 
 .email{
@@ -98,7 +99,6 @@ header{
     font-family: Arial;
 }
 .buscador{
-    background-color: aqua;
     position: relative;
     width: 300px;
     margin-top: 15px;
