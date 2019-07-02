@@ -2,14 +2,15 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Soft Landing</title>
-    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8f4c8c43b9.js"></script>
+
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/socialicons.css">
 </head>
@@ -19,9 +20,9 @@
         <header>
             <div class="topnav">
                 <div class="logo color-blanco">Soft Landing</div>
-                <nav>
+                <nav class="nav-site">
                     <ul>
-                        <li><a class="color-blanco" href="index2.html">Home</a></li>
+                        <li><a class="color-blanco" href="#">Home</a></li>
                         <li><a class="color-blanco" href="#">Features</a></li>
                         <li><a class="color-blanco" href="#">About Us</a></li>
                         <li><a class="color-blanco" href="#">Pricing</a></li>
@@ -39,8 +40,8 @@
                 </div>
             </div>
         </header>
-        <section class="seccion">
-            <div class="wath-you-get">
+        <div class="row seccion seccion-impar">
+            <div class="col-xs-12 col-md-6 col-xl-6 col-lg-6">
                 <h1>Wath you get</h1>
                 <div class="itabs">
                     <input id="tab1" type="radio" name="tabs" checked>
@@ -85,12 +86,16 @@
 
                 </div>
             </div>
-            <img class="wyg-image" src="resources/images/laptop.jpg" width="300" alt="Responsive Design">
-        </section>
-        <section class="seccion-impar">
-            <div class="professional-team">
+            <div class="col-xs-12 col-md-6 col-xl-6 col-lg-6">
+                <img class="wyg-image" src="resources/images/laptop.jpg" width="300" alt="Responsive Design">
+            </div>
+        </div>
+        <div class="row  seccion seccion-par">
+            <div class="col-12">
                 <h1 class="h1">Profesional Team for you</h1>
-                <div class="professional-list">
+            </div>
+            <div class="col-xs-12 col-md-4 col-xl-4 col-lg-4 professional-list">
+                <div class="row">
                     <div class="profesional-info">
                         <img src="resources/images/andrew_orange.png" alt="Andrew Orange">
                         <div class="profesional">
@@ -101,7 +106,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="professional-list">
+            </div>
+            <div class="col-xs-12 col-md-4 col-xl-4 col-lg-4 professional-list">
+                <div class="row">
                     <div class="profesional-info">
                         <div class="profesional">
                             <h2>Catherine Soft</h2>
@@ -112,7 +119,9 @@
                         <img src="resources/images/img2.png" alt="Andrew Orange">
                     </div>
                 </div>
-                <div class="professional-list">
+            </div>
+            <div class="col-xs-12 col-md-4 col-xl-4 col-lg-4 professional-list">
+                <div class="row">
                     <div class="profesional-info">
                         <img src="resources/images/img3.png" alt="Andrew Orange">
                         <div class="profesional">
@@ -124,142 +133,177 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="seccion">
-            <div class="what-people-say">
-                <img class="wps-image" src="resources/images/wps.png" alt="">
-                <div class="wps-box">
-                    <h1>What people say</h1>
-                    <div class="slider">
-                        <div class="article" id="slider1">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae voluptatum
-                                quia
-                                consectetur animi fugit, iste, incidunt, facere repudiandae similique quasi. Esse,
-                                modi
-                                porro
-                                alias recusandae sunt, saepe aliquid voluptates sit, distinctio sapiente ab itaque
-                                nihil
-                                ipsam.
-                            </p>
-                            <div class="wps-user">
-                                <img class="wps-img-user" src="resources/images/img2.png" alt="">
-                                <span class="wps-user-name">Sofia</span>
-                            </div>
+        </div>
+        <div class="row  seccion seccion-impar">
+            <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 wps-image">
+                <img src="resources/images/wps.png" alt="Imagen">
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-6 col-xl-6 what-people-say">
+                <h1>What people say</h1>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner carousel-text">
+                      <div class="carousel-item active carousel-box">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae voluptatum
+                            quia
+                            consectetur animi fugit, iste, incidunt, facere repudiandae similique quasi. Esse,
+                            modi
+                            porro
+                            alias recusandae sunt, saepe aliquid voluptates sit, distinctio sapiente ab itaque
+                            nihil
+                            ipsam.
+                        </p>
+                        <div class="wps-user">
+                            <img class="wps-img-user" src="resources/images/img2.png" alt="">
+                            <span class="wps-user-name">Sofia</span>
                         </div>
-                        <div class="mensaje" id="slider2">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae voluptatum
-                                quia
-                                consectetur animi fugit, iste, incidunt, facere repudiandae similique quasi. Esse,
-                                modi
-                                porro
-                                alias recusandae sunt, saepe aliquid voluptates sit, distinctio sapiente ab itaque
-                                nihil
-                                ipsam.
-                            </p>
-                            <div class="slider" class="wps-user">
-                                <img class="wps-img-user" src="resources/images/img3.png" alt="">
-                                <span class="wps-user-name">Sofia</span>
-                            </div>
+                      </div>
+                      <div class="carousel-item carousel-box">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae voluptatum
+                            quia
+                            consectetur animi fugit, iste, incidunt, facere repudiandae similique quasi. Esse,
+                            modi
+                            porro
+                            alias recusandae sunt, saepe aliquid voluptates sit, distinctio sapiente ab itaque
+                            nihil
+                            ipsam.
+                        </p>
+                        <div class="slider" class="wps-user">
+                            <img class="wps-img-user" src="resources/images/img3.png" alt="">
+                            <span class="wps-user-name">Sofia</span>
                         </div>
-                        <div class="mensaje" id="slider3">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae voluptatum
-                                quia
-                                consectetur animi fugit, iste, incidunt, facere repudiandae similique quasi. Esse,
-                                modi
-                                porro
-                                alias recusandae sunt, saepe aliquid voluptates sit, distinctio sapiente ab itaque
-                                nihil
-                                ipsam.
-                            </p>
-                            <div class="wps-user">
-                                <img class="wps-img-user" src="resources/images/andrew_orange.png" alt="">
-                                <span class="wps-user-name">Sofia</span>
+                      </div>
+                      <div class="carousel-item carousel-box">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium quae voluptatum
+                            quia
+                            consectetur animi fugit, iste, incidunt, facere repudiandae similique quasi. Esse,
+                            modi
+                            porro
+                            alias recusandae sunt, saepe aliquid voluptates sit, distinctio sapiente ab itaque
+                            nihil
+                            ipsam.
+                        </p>
+                        <div class="wps-user">
+                            <img class="wps-img-user" src="resources/images/andrew_orange.png" alt="">
+                            <span class="wps-user-name">Sofia</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row  seccion seccion-par">
+            <div class="col-12">
+                <div class="row">
+                    <h1 class="box-planes-h1">Choose any plan</h1>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4 box-planes">
+                        <div class="box-plan">
+                            <h2 class="h2">Student</h2>
+                            <ul>
+                                <li>20 responsive designs</li>
+                                <li>10 Dashboard</li>
+                                <li>1 TB Storage</li>
+                                <li>6 TB Bandwith</li>
+                                <li>24-hour Support</li>
+                            </ul>
+                            <div class="box-price-register">
+                                <div class="box-price">$200/mo</div>
+                                <div class="botonregistrar"><a href="#">Register Now</a></div>
                             </div>
                         </div>
                     </div>
-                    <div class="slider-tab">
-                        <input id="msg1" type="radio" name="slidertab" checked>
-                        <input id="msg2" type="radio" name="slidertab">
-                        <input id="msg3" type="radio" name="slidertab">
+                    <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4  box-planes">
+                        <div class="box-plan">
+                            <h2 class="h2">Business</h2>
+                            <ul>
+                                <li>50 responsive designs</li>
+                                <li>30 Dashboard</li>
+                                <li>2 TB Storage</li>
+                                <li>12 TB Bandwith</li>
+                                <li>15-minutes Support</li>
+                            </ul>
+                            <div class="box-price-register">
+                                <div class="box-price">$350/mo</div>
+                                <div class="botonregistrar"><a href="#">Register Now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4  box-planes">
+                        <div class="box-plan">
+                            <h2 class="h2">Professional</h2>
+                            <ul>
+                                <li>100 responsive designs</li>
+                                <li>60 Dashboard</li>
+                                <li>5 TB Storage</li>
+                                <li>25 TB Bandwith</li>
+                                <li>1-minute Support</li>
+                            </ul>
+                            <div class="box-price-register">
+                                <div class="box-price">$550/mo</div>
+                                <div class="botonregistrar"><a href="#">Register Now</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="seccion-impar">
-            <h1 class="h1">Choose any plan</h1>
-            <div class="box-planes">
-                <div class="box-plan">
-                    <h2 class="h2">Student</h2>
-                    <ul>
-                        <li>20 responsive designs</li>
-                        <li>10 Dashboard</li>
-                        <li>1 TB Storage</li>
-                        <li>6 TB Bandwith</li>
-                        <li>24-hour Support</li>
-                    </ul>
-                    <div class="box-price-register">
-                        <div class="box-price">$200/mo</div>
-                        <div class="botonregistrar"><a href="#">Register Now</a></div>
+        </div>
+        <div class="row  seccion seccion-impar">
+            <h1 class="box-planes-h1">Say hello to us</h1>
+            <div class="col-12 formulario">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4">
+                        <input class="caja-texto borde-imput" type="text" placeholder="Full Name">
                     </div>
-                </div>
-                <div class="box-plan">
-                    <h2 class="h2">Business</h2>
-                    <ul>
-                        <li>50 responsive designs</li>
-                        <li>30 Dashboard</li>
-                        <li>2 TB Storage</li>
-                        <li>12 TB Bandwith</li>
-                        <li>15-minutes Support</li>
-                    </ul>
-                    <div class="box-price-register">
-                        <div class="box-price">$350/mo</div>
-                        <div class="botonregistrar"><a href="#">Register Now</a></div>
+                    <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4">
+                        <input class="caja-texto borde-imput" type="text" placeholder="Email Address">
+
                     </div>
+                    <div class="col-xs-12 col-md-4 col-lg-4 col-xl-4">
+                        <input class="botonsendmessage" type="submit" value="Send Message">
+                    </div>
+
                 </div>
-                <div class="box-plan">
-                    <h2 class="h2">Professional</h2>
-                    <ul>
-                        <li>100 responsive designs</li>
-                        <li>60 Dashboard</li>
-                        <li>5 TB Storage</li>
-                        <li>25 TB Bandwith</li>
-                        <li>1-minute Support</li>
-                    </ul>
-                    <div class="box-price-register">
-                        <div class="box-price">$550/mo</div>
-                        <div class="botonregistrar"><a href="#">Register Now</a></div>
+                <div class="row">
+                    <div class="col-12">
+                        <textarea class="caja-textarea borde-imput" name="message" id="message"
+                            placeholder="Your Message" rows="5"></textarea>
                     </div>
                 </div>
             </div>
 
-
-
-        </section>
-        <section class="seccion-par">
-            <div class="formulario">
-                <h1 class="h1">Say hello to us</h1>
-                <div>
-                    <input class="caja-texto borde-imput" type="text" placeholder="Full Name">
-                    <input class="caja-texto borde-imput" type="text" placeholder="Email Address">
-                    <input class="botonsendmessage" type="submit" value="Send Message">
-                    <textarea class="caja-textarea borde-imput" name="message" id="message" placeholder="Your Message"
-                        cols="30" rows="5"></textarea>
+        </div>
+        <div class="row seccion seccion-impar">
+            <div class="col-xs-12 col-md-7 col-lg-8 col-xl-8">
+                <div class="box-copyright">copyright ° 2018 company Name - Design: Tooplate</div>
+            </div>
+            <div class="col-xs-12  col-md-5 col-lg-4 col-xl-4">
+                <div class="box-social">
+                    <ul class="social-icon">
+                        <li class="fab ico-f"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="fab ico-t"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li class="fab ico-g"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                        <li class="fab ico-l"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="fab ico-y"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <footer>
-            <div class="box-copyright">copyright ° 2018 company Name - Design: Tooplate</div>
-            <div class="box-social">
-                <ul class="social-icon">
-                    <li class="fab ico-f"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="fab ico-t"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li class="fab ico-g"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                    <li class="fab ico-l"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="fab ico-y"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </ul>
-            </div>
-        </footer>
+        </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
